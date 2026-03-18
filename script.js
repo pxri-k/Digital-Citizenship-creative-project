@@ -57,7 +57,7 @@ function answer(questionNumber, type) {
       result.innerHTML = "❌ Not okay. Joining in makes the situation worse.";
     } 
     else {
-      result.innerHTML = "⚠️ Ignoring it doesn’t help. It’s better to take action and support the person.";
+      result.innerHTML = "⚠️ Ignoring it doesn't help. It's better to take action and support the person.";
     }
   }
 }
