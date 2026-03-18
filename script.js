@@ -37,7 +37,6 @@ function answer(questionNumber, type) {
     }
   }
 
-  // ✅ Question 4
   else if (questionNumber === 4) {
     if (type === "good") {
       result.innerHTML = "✅ Correct! Strong passwords and privacy settings help protect your information.";
@@ -50,7 +49,6 @@ function answer(questionNumber, type) {
     }
   }
 
-  // ✅ Question 5
   else if (questionNumber === 5) {
     if (type === "good") {
       result.innerHTML = "✅ Correct! Supporting others and reporting harmful behavior is the right choice.";
