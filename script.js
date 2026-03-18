@@ -1,33 +1,65 @@
-function answer(qNum, type) {
-  const box = document.getElementById("result" + qNum);
+function answer(questionNumber, type) {
+  let result = document.getElementById("result" + questionNumber);
 
-  if (qNum === 1) {
+  if (questionNumber === 1) {
     if (type === "good") {
-      box.innerHTML = "<strong>Correct ✅</strong><br>Reporting bullying and supporting the person helps keep online spaces safer and kinder.";
-    } else if (type === "bad") {
-      box.innerHTML = "<strong>Not good ❌</strong><br>Liking mean comments supports bullying and can hurt people.";
-    } else {
-      box.innerHTML = "<strong>Okay but not best 🤔</strong><br>Ignoring can allow bullying to continue. Reporting + supporting is better.";
+      result.innerHTML = "✅ Correct! Good digital citizenship means making safe and respectful choices online.";
+    } 
+    else if (type === "bad") {
+      result.innerHTML = "❌ Not quite. That choice could be harmful or unsafe online.";
+    } 
+    else {
+      result.innerHTML = "⚠️ Close, but not the best choice. There is a better response.";
     }
   }
 
-  if (qNum === 2) {
+  else if (questionNumber === 2) {
     if (type === "good") {
-      box.innerHTML = "<strong>Correct ✅</strong><br>Checking reliable sources helps stop misinformation and rumors from spreading.";
-    } else if (type === "bad") {
-      box.innerHTML = "<strong>Not good ❌</strong><br>Reposting fast can spread false info and harm people.";
-    } else {
-      box.innerHTML = "<strong>Not bad 🤔</strong><br>Asking a friend helps, but the best is checking a reliable source.";
+      result.innerHTML = "✅ Correct! Always check if information is reliable before sharing.";
+    } 
+    else if (type === "bad") {
+      result.innerHTML = "❌ Not quite. Spreading unverified information can be harmful.";
+    } 
+    else {
+      result.innerHTML = "⚠️ Close, but it's better to verify with trusted sources.";
     }
   }
 
-  if (qNum === 3) {
+  else if (questionNumber === 3) {
     if (type === "good") {
-      box.innerHTML = "<strong>Correct ✅</strong><br>Sharing a hobby without personal details is safe and doesn’t risk privacy.";
-    } else if (type === "bad") {
-      box.innerHTML = "<strong>Very unsafe ❌</strong><br>Never share your address or phone number publicly.";
-    } else {
-      box.innerHTML = "<strong>Risky 🤔</strong><br>Sharing your schedule can put you at risk. Avoid posting it publicly.";
+      result.innerHTML = "✅ Correct! Sharing general interests is much safer than personal details.";
+    } 
+    else if (type === "bad") {
+      result.innerHTML = "❌ Not safe. Personal information should not be shared publicly.";
+    } 
+    else {
+      result.innerHTML = "⚠️ Still risky. Avoid sharing information that reveals your routine.";
+    }
+  }
+
+  // ✅ Question 4
+  else if (questionNumber === 4) {
+    if (type === "good") {
+      result.innerHTML = "✅ Correct! Strong passwords and privacy settings help protect your information.";
+    } 
+    else if (type === "bad") {
+      result.innerHTML = "❌ Not safe. Posting personal info publicly can put you at risk.";
+    } 
+    else {
+      result.innerHTML = "⚠️ Not the best idea. Using the same password everywhere is risky.";
+    }
+  }
+
+  // ✅ Question 5
+  else if (questionNumber === 5) {
+    if (type === "good") {
+      result.innerHTML = "✅ Correct! Supporting others and reporting harmful behavior is the right choice.";
+    } 
+    else if (type === "bad") {
+      result.innerHTML = "❌ Not okay. Joining in makes the situation worse.";
+    } 
+    else {
+      result.innerHTML = "⚠️ Ignoring it doesn’t help. It’s better to take action and support the person.";
     }
   }
 }
