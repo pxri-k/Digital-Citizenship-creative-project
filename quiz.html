@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz | Digital Citizenship Guide</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="page-header">
+    <div class="container">
+      <h1>Mini Quiz</h1>
+      <p class="subtitle">Click an answer and see instant feedback.</p>
+    </div>
+  </header>
+
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html">DC Guide</a>
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="tips.html">Tips</a>
+        <a href="examples.html">Examples</a>
+        <a class="active" href="quiz.html">Quiz</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <section class="card">
+      <h2>Question 1</h2>
+      <p><strong>Someone comments:</strong> “You’re so dumb, delete your post.”</p>
+
+      <button class="quiz-btn good" onclick="answer(1,'good')">Report it + support the person</button>
+      <button class="quiz-btn bad" onclick="answer(1,'bad')">Like the comment</button>
+      <button class="quiz-btn neutral" onclick="answer(1,'neutral')">Ignore it completely</button>
+
+      <div id="result1" class="result">Choose an option to see feedback.</div>
+    </section>
+
+    <section class="card">
+      <h2>Question 2</h2>
+      <p><strong>You are about to repost a “news” post.</strong> What should you do first?</p>
+
+      <button class="quiz-btn good" onclick="answer(2,'good')">Check if it’s true (reliable source)</button>
+      <button class="quiz-btn bad" onclick="answer(2,'bad')">Repost fast so you’re first</button>
+      <button class="quiz-btn neutral" onclick="answer(2,'neutral')">Ask a friend if it’s true</button>
+
+      <div id="result2" class="result">Choose an option to see feedback.</div>
+    </section>
+
+    <section class="card">
+      <h2>Question 3</h2>
+      <p><strong>Which is safest to share publicly?</strong></p>
+
+      <button class="quiz-btn bad" onclick="answer(3,'bad')">Your address and phone number</button>
+      <button class="quiz-btn neutral" onclick="answer(3,'neutral')">Your school schedule</button>
+      <button class="quiz-btn good" onclick="answer(3,'good')">A hobby you like (no personal details)</button>
+
+      <div id="result3" class="result">Choose an option to see feedback.</div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Creative Project – Digital Citizenship | Made by: <span class="muted">Parneet Kreer</span></p>
+    </div>
+  </footer>
+</body>
+</html>
