@@ -1,4 +1,4 @@
-/* ---------- RESET ---------- */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -258,4 +258,39 @@ body {
 
 .footer .muted {
   opacity: 0.8;
+}
+
+/* ---------- imagesssss ---------- */
+.checklist-img {
+  width: 160px;
+  filter: drop-shadow(0 0 6px cyan);
+}
+
+.checklist-content {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.social-content,
+.golden-content,
+.bullying-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.social-content img,
+.social-img {
+  width: auto;
+  max-width: 45%;
+  height: 240px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 6px cyan);
+}
+
+.checklist-content .list {
+  flex: 1;
 }
